@@ -1,0 +1,106 @@
+$background: #f1ece1;
+$grey-brown: #211d25;
+$dark-grey: #505668;
+
+$titles: #1b181f;
+$color2: #803bff;
+$color3: #695d80;
+$buttons: #4f4c55;
+$buttons-hover: #4f4c5565;
+$proyect-hover: #21212265;
+$text: #2a2633;
+
+.main {
+  padding: 5% 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 100dvw;
+  .profileContact {
+    width: 50%;
+    .greeting {
+      display: flex;
+      align-items: center;
+      justify-content: baseline;
+      gap: 1.5rem;
+      width: 100%;
+      .avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: white;
+      }
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        color: $titles;
+      }
+      a {
+        display: flex;
+        width: 30%;
+        text-decoration: none;
+        padding: 0.3rem 0;
+        align-items: center;
+        .social {
+          margin-left: 5px;
+        }
+      }
+      .sendEmail {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 3rem;
+        input {
+          border: 2px solid white;
+          border-radius: 5px;
+          padding: 0.3rem;
+          margin-top: 0.3rem;
+          outline: none;
+          color: $grey-brown;
+          &:focus {
+            border: 2px solid $grey-brown;
+          }
+        }
+        .message {
+          border: 2px solid white;
+          padding: 0.3rem;
+          border-radius: 5px;
+          margin-top: 0.3rem;
+          height: 150px;
+          vertical-align: top;
+          outline: none;
+          color: $grey-brown;
+          &:focus {
+            border: 2px solid $grey-brown;
+          }
+        }
+        .submit {
+          margin-top: 5px;
+          width: 20%;
+          align-self: flex-end;
+          color: $background;
+          background-color: $buttons;
+          border: 2px solid $background;
+          &:hover {
+            cursor: pointer;
+            background-color: $buttons-hover;
+            color: $dark-grey;
+          }
+        }
+      }
+    }
+  }
+  .aboutMe {
+    width: 50%;
+    padding: 1.5rem 5rem;
+    h2 {
+      font-size: 30px;
+      color: $titles;
+    }
+    p {
+      margin-top: 1.3rem;
+      line-height: 25px;
+    }
+  }
+}

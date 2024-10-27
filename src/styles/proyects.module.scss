@@ -1,0 +1,46 @@
+@use "../styles/main.module.scss";
+
+.proyectsContainer {
+  padding: 0 10% 10% 10%;
+  h2 {
+    color: main.$titles;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .proyects {
+    display: flex;
+    justify-content: space-between;
+    .proyect {
+      width: 300px;
+      height: 300px;
+      border-radius: 2.5px;
+      background-color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      &:hover {
+        cursor: pointer;
+      }
+      a {
+        width: 100%;
+        padding: 0.5rem;
+        background-color: main.$buttons-hover;
+        text-decoration: none;
+        color: main.$dark-grey;
+        font-weight: 500;
+        border-radius: 0 0 2.5px 2.5px;
+        align-self: flex-end;
+        position: absolute;
+        bottom: 0;
+        &:hover {
+          cursor: pointer;
+          background-color: main.$buttons;
+          color: main.$background;
+        }
+      }
+    }
+  }
+}

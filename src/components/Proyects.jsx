@@ -59,7 +59,7 @@ const Proyects = () => {
             </a>
           </motion.a>
           <motion.a
-            href="https://marvelous-cannoli-487362.netlify.app/"
+            href="https://manage-page-master.netlify.app"
             target="_blank"
             className={styles.proyect}
             initial={{ opacity: 0 }}
@@ -72,12 +72,14 @@ const Proyects = () => {
             <img src="proyect2.jpg" />
             <a
               target="_blank"
-              href="https://github.com/alejandroRojasx64/news-homepage.git"
+              href="https://github.com/AlejandroRojas1/manage-landing-page-master.git"
             >
               ver en github
             </a>
           </motion.a>
-          <motion.div
+          <motion.a
+            href="https://easy-bank-page-landing.netlify.app"
+            target="_blank"
             className={styles.proyect}
             initial={{ opacity: 0, x: 200 }}
             whileInView="inView"
@@ -93,7 +95,7 @@ const Proyects = () => {
             >
               ver en github
             </a>
-          </motion.div>
+          </motion.a>
         </div>
       </section>
     </>

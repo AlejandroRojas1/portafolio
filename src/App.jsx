@@ -47,7 +47,7 @@ function App() {
               animate={{ opacity: 1 }}
               transition={{ ease: "backIn", duration: 1.6 }}
               target="_blank"
-              href="/"
+              href="https://github.com/AlejandroRojas1"
             >
               <Icon icon="icomoon-free:github" />
               <span className={styles.social}>Github</span>

@@ -53,7 +53,7 @@ const Proyects = () => {
             <img src="proyect1.jpg" />
             <a
               target="_blank"
-              href="https://github.com/alejandroRojasx64/ecommerce-product-page"
+              href="https://github.com/AlejandroRojas1/ecommerce-product-main.git"
             >
               ver en github
             </a>

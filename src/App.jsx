@@ -37,7 +37,7 @@ function App() {
               animate={{ opacity: 1 }}
               transition={{ ease: "backIn", duration: 1.3 }}
               target="_blank"
-              href="/"
+              href="https://www.linkedin.com/in/alejandro-rojas-bbb083340"
             >
               <Icon icon="devicon:linkedin" />
               <span className={styles.social}>Linkedin</span>
@@ -58,7 +58,7 @@ function App() {
               transition={{ ease: "backIn", duration: 1.9 }}
             >
               <Icon icon="cib:whatsapp" />
-              <span className={styles.social}>3705-035504</span>
+              <span className={styles.social}>+54 3705-035504</span>
             </motion.a>
 
             <motion.form

@@ -17,7 +17,7 @@ function App() {
           >
             <img
               className={styles.avatar}
-              // src="../public/clásico-marco-de-oro-con-trazado-de-recorte.webp"
+              src="/avatar.png"
             />
             <h1>
               Hola, soy Alejandro
@@ -107,6 +107,7 @@ function App() {
             Me gusta aprender cosas nuevas y tambien disfruto mucho compartiendo
             mis conocimientos con los demas.
           </p>
+          <img src="/react-logo.svg" alt="logo-react" />
         </motion.div>
       </section>
       <Skills />

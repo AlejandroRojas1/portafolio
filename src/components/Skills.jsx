@@ -5,21 +5,20 @@ import { motion } from "framer-motion";
 
 
 
-let htmlScreen;
-let cssScreen;
+let screen;
+let nonAnimated = true;
 if(window.innerWidth <= 768) {
-  htmlScreen = -100
-  cssScreen = -100
+  nonAnimated = false
 } else {
-  htmlScreen = -200
-  csslScreen = -200
+  screen = -200
 }
 
 const Skills = () => {
   return (
     <>
       <section className={styles.skills}>
-        <motion.h2
+        <motion.h2 
+          
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 1 }}
@@ -30,7 +29,7 @@ const Skills = () => {
         <div className={styles.skillsContainer}>
           <span className={styles.icons}>
             <motion.span
-              initial={{ opacity: 0, x: htmlScreen }}
+              initial={{ opacity: 0, x: screen }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeInOut", duration: 1.9 }}
               viewport={{ once: true }}
@@ -38,7 +37,7 @@ const Skills = () => {
               <Icon icon="akar-icons:html-fill" />
             </motion.span>
             <motion.span
-              initial={{ opacity: 0, x: cssScreen }}
+              initial={{ opacity: 0, x: screen }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeInOut", duration: 1.6 }}
               viewport={{ once: true }}

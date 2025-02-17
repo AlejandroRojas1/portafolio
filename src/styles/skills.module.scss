@@ -17,18 +17,15 @@
       justify-content: space-evenly;
       font-size: 5.5rem;
     }
-    .interests {
-      margin: 5% 0;
-      h3 {
-        padding-bottom: 1.5rem;
-        font-size: 30px;
-        color: main.$titles;
-      }
-      .interestsIcons {
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 5.5rem;
-        padding: 0 35%;
+  }
+}
+
+@media (width <= 768px) {
+  .skills {
+    padding: 5% 2%;
+    .skillsContainer {
+      .icons {
+        font-size: 3rem;
       }
     }
   }

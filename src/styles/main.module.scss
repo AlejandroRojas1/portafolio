@@ -40,6 +40,7 @@ $text: #2a2633;
 
       h2 {
         color: $titles;
+        text-decoration: underline;
       }
 
       a {
@@ -155,7 +156,7 @@ $text: #2a2633;
       .greeting {
         flex-direction: column;
         padding-top: 2rem;
-
+        margin-bottom: 1rem;
         h1 {
           text-align: center;
         }
@@ -196,6 +197,15 @@ $text: #2a2633;
           grid-column: 1/5;
           padding-top: 1rem;
         }
+      }
+    }
+
+    .aboutMe {
+      width: 100%;
+      padding: 0;
+      .img {
+        width: 20%;
+        margin-inline: 40%;
       }
     }
   }

@@ -44,3 +44,13 @@
     }
   }
 }
+
+@media (width <= 768px) {
+  .proyectsContainer {
+    .proyects {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+}

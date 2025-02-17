@@ -3,6 +3,18 @@ import styles from "../styles/skills.module.scss";
 import { Icon } from "@iconify-icon/react";
 import { motion } from "framer-motion";
 
+
+
+let htmlScreen;
+let cssScreen;
+if(window.innerWidth <= 768) {
+  htmlScreen = -100
+  cssScreen = -100
+} else {
+  htmlScreen = -200
+  csslScreen = -200
+}
+
 const Skills = () => {
   return (
     <>
@@ -18,16 +30,15 @@ const Skills = () => {
         <div className={styles.skillsContainer}>
           <span className={styles.icons}>
             <motion.span
-              initial={{ opacity: 0, x: -200 }}
+              initial={{ opacity: 0, x: htmlScreen }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeInOut", duration: 1.9 }}
               viewport={{ once: true }}
             >
               <Icon icon="akar-icons:html-fill" />
             </motion.span>
-
             <motion.span
-              initial={{ opacity: 0, x: -200 }}
+              initial={{ opacity: 0, x: cssScreen }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeInOut", duration: 1.6 }}
               viewport={{ once: true }}
@@ -74,23 +85,22 @@ const Skills = () => {
             >
               <Icon icon="devicon-plain:vscode-wordmark" />
             </motion.span>
-            
             <motion.span
-                initial={{ opacity: 0, x: 200 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ ease: "easeInOut", duration: 1.9 }}
-                viewport={{ once: true }}
-              >
-                <Icon icon="ri:tailwind-css-fill" />
-              </motion.span>
-              <motion.span
-                initial={{ opacity: 0, x: 200 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ ease: "easeInOut", duration: 2.2 }}
-                viewport={{ once: true }}
-              >
-                <Icon icon="akar-icons:typescript-fill" />
-              </motion.span>
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ ease: "easeInOut", duration: 1.9 }}
+              viewport={{ once: true }}
+            >
+              <Icon icon="ri:tailwind-css-fill" />
+            </motion.span>
+            <motion.span
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ ease: "easeInOut", duration: 2.2 }}
+              viewport={{ once: true }}
+            >
+              <Icon icon="akar-icons:typescript-fill" />
+            </motion.span>
           </span>
         </div>
       </section>

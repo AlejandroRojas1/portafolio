@@ -30,7 +30,7 @@ function App() {
               animate={{ opacity: 1 }}
               transition={{ ease: "backIn", duration: 1 }}
             >
-              Contactame
+              Contactame :
             </motion.h2>
             <motion.a
               className={styles.linkedin}
@@ -110,7 +110,7 @@ function App() {
             Me gusta aprender cosas nuevas y tambien disfruto mucho compartiendo
             mis conocimientos con los demas.
           </p>
-          <img src="/react-logo.svg" alt="logo-react" />
+          <img className={styles.img} src="/react-logo.svg" alt="logo-react" />
         </motion.div>
       </section>
       <Skills />

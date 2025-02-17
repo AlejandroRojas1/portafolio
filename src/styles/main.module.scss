@@ -15,14 +15,17 @@ $text: #2a2633;
   display: flex;
   justify-content: space-between;
   width: 100dvw;
+
   .profileContact {
     width: 50%;
+
     .greeting {
       display: flex;
       align-items: center;
       justify-content: baseline;
       gap: 1.5rem;
       width: 100%;
+
       .avatar {
         width: 150px;
         height: 150px;
@@ -30,27 +33,33 @@ $text: #2a2633;
         background-color: white;
       }
     }
+
     .contact {
       display: flex;
       flex-direction: column;
+
       h2 {
         color: $titles;
       }
+
       a {
         display: flex;
         width: 30%;
         text-decoration: none;
         padding: 0.3rem 0;
         align-items: center;
+
         .social {
           margin-left: 5px;
         }
       }
+
       .sendEmail {
         display: flex;
         flex-direction: column;
         width: 50%;
         margin-top: 3rem;
+
         input {
           border: 2px solid white;
           border-radius: 5px;
@@ -58,10 +67,12 @@ $text: #2a2633;
           margin-top: 0.3rem;
           outline: none;
           color: $grey-brown;
+
           &:focus {
             border: 2px solid $grey-brown;
           }
         }
+
         .message {
           border: 2px solid white;
           padding: 0.3rem;
@@ -71,10 +82,12 @@ $text: #2a2633;
           vertical-align: top;
           outline: none;
           color: $grey-brown;
+
           &:focus {
             border: 2px solid $grey-brown;
           }
         }
+
         .submit {
           margin-top: 5px;
           width: 20%;
@@ -82,6 +95,7 @@ $text: #2a2633;
           color: $background;
           background-color: $buttons;
           border: 2px solid $background;
+
           &:hover {
             cursor: pointer;
             background-color: $buttons-hover;
@@ -91,28 +105,34 @@ $text: #2a2633;
       }
     }
   }
+
   .aboutMe {
     width: 50%;
     padding: 1.5rem 5rem;
+
     h2 {
       font-size: 30px;
       color: $titles;
     }
+
     p {
       margin-top: 1.3rem;
       line-height: 25px;
     }
+
     img {
-      width:40%;
+      width: 40%;
       margin-top: 3rem;
       margin-inline: 25%;
     }
   }
 }
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -121,5 +141,62 @@ $text: #2a2633;
 @media (prefers-reduced-motion: no-preference) {
   .aboutMe img {
     animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (width <=375px) {
+  .main {
+    padding: 1% 5%;
+    flex-direction: column;
+
+    .profileContact {
+      width: 100%;
+
+      .greeting {
+        flex-direction: column;
+        padding-top: 2rem;
+
+        h1 {
+          text-align: center;
+        }
+      }
+
+      .contact {
+        display: grid;
+        grid-template-rows: 30px 30px 30px 250px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        h2 {
+          font-size: 20px;
+          grid-row: 1/2;
+          grid-column: 1/2;
+        }
+
+        .linkedin {
+          grid-row: 2/3;
+          grid-column: 1/2;
+          width: 100%;
+        }
+        .github {
+          grid-row: 2/3;
+          grid-column: 2/3;
+          width: 100%;
+        }
+        .whatsapp {
+          grid-row: 3/4;
+          grid-column: 1/5;
+          width: 100%;
+        }
+
+        .sendEmail {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          grid-row: 4/5;
+          grid-column: 1/5;
+          padding-top: 1rem;
+        }
+      }
+    }
   }
 }

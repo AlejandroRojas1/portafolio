@@ -33,6 +33,7 @@ function App() {
               Contactame
             </motion.h2>
             <motion.a
+              className={styles.linkedin}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "backIn", duration: 1.3 }}
@@ -43,6 +44,7 @@ function App() {
               <span className={styles.social}>Linkedin</span>
             </motion.a>
             <motion.a
+              className={styles.github}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "backIn", duration: 1.6 }}
@@ -53,6 +55,7 @@ function App() {
               <span className={styles.social}>Github</span>
             </motion.a>
             <motion.a
+              className={styles.whatsapp}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "backIn", duration: 1.9 }}
